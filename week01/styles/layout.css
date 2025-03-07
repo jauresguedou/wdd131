@@ -1,0 +1,50 @@
+h1,h2,h3,h4 {
+    font-size: 24px;
+}
+
+
+header {
+    display: grid;
+    background-color: darkslategray;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+nav a {
+    color:white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+
+.content{
+    display: flex;
+    height:60vh;
+    
+}
+
+main {
+    flex:3;
+    background-color: dimgray;
+    padding: 20px;
+    
+}
+
+aside{
+    flex:1;
+    background-color: aliceblue;
+    padding: 20px;
+}
+
+footer {
+    display:grid;
+    background-color: darkcyan;
+    justify-content: center;
+    height: 40vh;
+}
