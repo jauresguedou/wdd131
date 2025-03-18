@@ -1,3 +1,4 @@
+/* Body Styles */
 body {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Roboto Condensed', sans-serif;
@@ -5,27 +6,21 @@ body {
     font-family: 'Smooch Sans', sans-serif;
 }
 
-
-header{
-    background-color:indigo;
+/* Header Styles */
+header {
+    background-color: indigo;
     justify-content: space-between;
     display: flex;
     align-items: center;
     padding: 10px;
     margin-left: 30px;
-    margin-left: 30px;
-    
-    
 }
 
-nav{
+/* Navigation Styles */
+nav {
     display: flex;
     justify-content: flex-end;
     gap: 20px;
-    
-
-    
-    
 }
 
 nav a {
@@ -34,15 +29,34 @@ nav a {
     text-decoration: none;
     justify-content: space-around;
     color: white;
-    font-weight: bold;      
+    font-weight: bold;
 }
 
-nav a:hover{
+nav a {
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+nav a:hover {
     background-color: bisque;
-    color:darkgoldenrod
+    color: darkgoldenrod;
 }
 
-p{
+nav .hidden {
+    display: none;
+}
+
+/* Hamburger Button Styles */
+.hamburger {
+    display: none;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+/* Paragraph Styles */
+p {
     margin-top: 20px;
     color: white;
     margin-left: 20px;
@@ -50,12 +64,27 @@ p{
     font-size: x-large;
 }
 
-h1{
+/* Headings Styles */
+h1 {
     text-align: center;
     color: white;
 }
 
-main{
+h2 {
+    display: none;
+}
+
+/* Section-Specific Headings */
+.Album h1 {
+    color: black;
+}
+
+.good h1 {
+    display: none;
+}
+
+/* Main Styles */
+main {
     text-align: center;
     margin: 0 auto;
     margin-bottom: 30px;
@@ -63,50 +92,32 @@ main{
     max-width: 1000px;
 }
 
+/* Picture Grid Styles */
 .pic {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap:1px;
+    grid-gap: 1px;
 }
 
-.pic img{
+.pic img {
     width: 100%;
 }
 
-figcaption{
+/* Figure Caption Styles */
+figcaption {
     text-align: center;
     font-weight: bold;
-    color:indigo ;
+    color: indigo;
 }
 
-img{
-    
+/* Image Styles */
+img {
     width: 300px;
     height: 150px;
 }
 
-footer{
+/* Footer Styles */
+footer {
     background-color: indigo;
     text-align: center;
 }
-.hamburger{
-    display: none;
-    color:white;
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 2rem;
-}
-
-nav .hidden {
-      display:none;
-}
-
-h2{
-    display: none;
-}
-
-.Album h1{
-    color: black;
-}
-
