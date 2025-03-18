@@ -100,3 +100,7 @@ footer{
 nav .hidden {
       display:none;
 }
+
+h2{
+    display: none;
+}
