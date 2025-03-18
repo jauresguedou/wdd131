@@ -52,6 +52,7 @@ p{
 
 h1{
     text-align: center;
+    color: white;
 }
 
 main{
@@ -103,5 +104,9 @@ nav .hidden {
 
 h2{
     display: none;
+}
+
+.Album h1{
+    color: black;
 }
 
