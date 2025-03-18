@@ -1,0 +1,102 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Smooch Sans', sans-serif;
+}
+
+
+header{
+    background-color:indigo;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-left: 30px;
+    margin-left: 30px;
+    
+    
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    
+
+    
+    
+}
+
+nav a {
+    justify-content: center;
+    justify-content: space-between;
+    text-decoration: none;
+    justify-content: space-around;
+    color: white;
+    font-weight: bold;      
+}
+
+nav a:hover{
+    background-color: bisque;
+    color:darkgoldenrod
+}
+
+p{
+    margin-top: 20px;
+    color: white;
+    margin-left: 20px;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+h1{
+    text-align: center;
+}
+
+main{
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    max-width: 1000px;
+}
+
+.pic {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:1px;
+}
+
+.pic img{
+    width: 100%;
+}
+
+figcaption{
+    text-align: center;
+    font-weight: bold;
+    color:indigo ;
+}
+
+img{
+    
+    width: 300px;
+    height: 150px;
+}
+
+footer{
+    background-color: indigo;
+    text-align: center;
+}
+.hamburger{
+    display: none;
+    color:white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+nav .hidden {
+      display:none;
+}

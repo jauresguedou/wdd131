@@ -9,3 +9,13 @@ try {
 } catch (error) {
     console.error("Error updating the footer date information:", error);
 }
+// Select the hamburger button and navigation menu
+const hamburger = document.getElementById("hamburger");
+const menu = document.getElementById("menu");
+
+// Add event listener to toggle the menu visibility
+hamburger.addEventListener("click", () => {
+    menu.classList.toggle("hidden"); // Toggle the 'hidden' class on the menu
+    // Change the button symbol between ☰ (open) and ✖ (close)
+    hamburger.textContent = menu.classList.contains("hidden") ? "☰" : "✖";
+});
