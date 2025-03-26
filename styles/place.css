@@ -1,0 +1,156 @@
+:root {
+    --bg-color: red;
+    --my-color: darkgreen;
+    --second-color: aliceblue;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;}
+
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--second-color);
+        background-color: var(--bg-color);
+        padding: 0;
+        margin: 0;
+        height: 20vh;
+
+    }
+
+
+    .hero {
+        position: relative;
+    }
+
+
+    .hero picture img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .data {
+
+        position: absolute;
+        top: 20px;
+        background-color: var(--second-color);
+        box-shadow: 10px;
+        left: 20px;
+        width: 300px;
+
+    }
+
+    .data h2 {
+        display: flex;
+        align-items: center;
+        background-color: var(--my-color);
+        color: var(--second-color);
+        margin-right: 30px;
+        height: 15vh;
+        right: 30px;
+
+
+    }
+
+    .weather {
+        position: absolute;
+        right: 20px;
+        bottom: 60px;
+        background-color: var(--second-color);
+        width: 200px;
+        border-radius: 15px;
+    }
+
+    .weather p {
+        text-align: center;
+    }
+
+    .weather h2 {
+        display: flex;
+        align-items: center;
+        color: var(--second-color);
+        background-color: var(--my-color);
+        margin-right: 30px;
+        height: 15vh;
+
+    }
+
+
+
+    footer {
+        font-size: large;
+        color: black;
+        background-color: var(--bg-color);
+        padding: 0;
+        margin: 0;
+        height: 20vh;
+        text-align: center;
+
+
+    }
+
+    .move {
+
+        right: 20px;
+        text-align: center;
+    }
+
+
+    @media (max-width:600px) {
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        picture {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .data {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .weather {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .weather h2::after {
+            content: none;
+        }
+
+        .weather .icon {
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .weather .icon img {
+            width: 50px;
+            height: auto;
+        }
+
+    }
+
+
+
+    .icon {
+        display: none;
+    }
+
+    #lastModified {
+        display: inline;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
