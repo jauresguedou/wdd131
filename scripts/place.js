@@ -49,7 +49,6 @@ window.addEventListener('pagehide', () => {
     }
 });
 
-// Optional: Fallback cleanup for older browsers
 window.addEventListener('beforeunload', () => {
     if (socket.readyState === WebSocket.OPEN) {
         socket.close();
@@ -57,7 +56,7 @@ window.addEventListener('beforeunload', () => {
     }
 });
 
-// Ensure DOM is ready before executing logic
+
 document.addEventListener('DOMContentLoaded', () => {
     displayWindChill(temperature, windSpeed);
 });
