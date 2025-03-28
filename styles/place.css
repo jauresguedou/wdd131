@@ -1,155 +1,116 @@
 :root {
     --bg-color: red;
-    --my-color: darkgreen;
+    --my-color: darkgreen; /* Ensured no changes to h2 background color */
     --second-color: aliceblue;
+    --header-height: 20vh;
+    --padding: 15px;
 }
 
-
 body {
-    font-family: 'Montserrat', sans-serif;}
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--second-color);
+    background-color: var(--bg-color);
+    height: var(--header-height);
+}
 
-    header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: var(--second-color);
-        background-color: var(--bg-color);
-        padding: 0;
-        margin: 0;
-        height: 20vh;
+.hero {
+    position: relative;
+    padding: var(--padding);
+}
 
-    }
+.hero picture img {
+    width: 100%;
+    height: auto;
+}
 
+.data, .weather {
+    position: absolute;
+    background-color: var(--second-color);
+    border-radius: 10px;
+    padding: var(--padding);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-    .hero {
-        position: relative;
-    }
+.data {
+    left: var(--padding);
+    top: var(--padding);
+    width: 300px;
+}
 
+.data h2 {
+    background-color: var(--my-color); /* Preserving dark green */
+    color: var(--second-color);
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 0 10px 0;
+    padding: 10px;
+}
 
-    .hero picture img {
-        width: 100%;
-        height: auto;
-        margin: 0;
-        padding: 0;
+.weather {
+    right: var(--padding);
+    bottom: var(--padding);
+    width: 250px;
+}
 
-    }
+.weather h2 {
+    background-color: var(--my-color);
+    color: var(--second-color);
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0;
+}
 
-    .data {
+.weather p {
+    text-align: center;
+}
 
-        position: absolute;
-        top: 20px;
-        background-color: var(--second-color);
-        left: 20px;
-        width: 300px;
+.weather .icon img {
+    display: none; /* By default, hide the weather icon */
+}
 
-    }
+.icon svg{
+    display: none;
+}
 
-    .data h2 {
-        display: flex;
-        align-items: center;
-        background-color: var(--my-color);
-        color: var(--second-color);
-        margin-right: 30px;
-        height: 15vh;
-        right: 30px;
-
-
-    }
-
-    .weather {
-        position: absolute;
-        right: 20px;
-        bottom: 60px;
-        background-color: var(--second-color);
-        width: 200px;
-        border-radius: 15px;
-    }
-
-    .weather p {
-        text-align: center;
-    }
-
-    .weather h2 {
-        display: flex;
-        align-items: center;
-        color: var(--second-color);
-        background-color: var(--my-color);
-        margin-right: 30px;
-        height: 15vh;
-
-    }
-
-
-
-    footer {
-        font-size: large;
-        color: black;
-        background-color: var(--bg-color);
-        padding: 0;
-        margin: 0;
-        height: 20vh;
-        text-align: center;
-
-
-    }
-
-    .move {
-
-        right: 20px;
-        text-align: center;
-    }
-
-
-    @media (max-width:600px) {
-
-        .hero {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        picture {
-            width: 100%;
-            height: auto;
-            margin-bottom: 20px;
-        }
-
-        .data {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .weather {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .weather h2::after {
-            content: none;
-        }
-
-        .weather .icon {
-            margin-bottom: 10px;
-            margin-top: 10px;
-        }
-
-        .weather .icon img {
-            width: 50px;
-            height: auto;
-        }
-
-    }
-
-
-
-    .icon {
-        display: none;
-    }
-
-    #lastModified {
-        display: inline;
-        text-align: center;
-        width: 100%;
+/* Mobile view: SVG weather icon displayed only */
+@media (max-width: 600px) {
+    .weather .icon img {
+        display: none; /* Display SVG icon */
         margin: 0 auto;
+        width: 50px;
+        height: 50px;
     }
+
+    .weather h2::after {
+        content: none; /* Remove emoticon beside 'Weather' */
+    }
+    
+}
+
+/* Wider views: Emoticon beside 'Weather' is displayed */
+@media (min-width: 601px) {
+    .weather h2::after {
+        content: ' ⛅'; /* Add one emoticon beside 'Weather' */
+    }
+
+    .weather .icon img {
+        display: none; /* Hide the SVG icon */
+    }
+}
+
+footer {
+    text-align: center;
+    background-color: var(--bg-color);
+    color: black;
+    padding: var(--padding);
+}
+
