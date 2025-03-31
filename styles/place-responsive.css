@@ -1,60 +1,31 @@
-@media (max-width:600px) {
-
+/* Media query for mobile views */
+@media screen and (max-width: 748px) {
     .hero {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    picture {
+    .hero picture,
+    .data,
+    .weather,
+    footer {
         width: 100%;
-        height: auto;
-        margin-bottom: 20px;
+        margin: 10px 0;
     }
 
-    .data {
-        text-align: center;
-        margin-bottom: 20px;
-        padding: 10px;
-    }
-
-    .weather {
-        text-align: center;
-        margin-bottom: 20px;
-        padding: 10px;
+    .weather h2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .weather h2::after {
-        content: none;
+        content: none; /* Remove emoticon */
     }
 
-    .weather .icon {
-        margin-bottom: 10px;
-        margin-top: 10px;
-    }
-
-    .weather .icon img {
-        width: 50px;
-        height: auto;
-    }
-    footer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    
-
-}
-@media (max-width: 600px) {
-    .weather h2 .wide-view-emoticon {
-        display: none; /* Hide the emoticon on mobile views */
-    }
-
-    .weather .icon {
-        display: block; /* Show the icon only on mobile views */
-        margin-bottom: 10px;
+    .icon {
+        display: block; /* Ensure the icon is visible */
         margin-top: 10px;
     }
 }
