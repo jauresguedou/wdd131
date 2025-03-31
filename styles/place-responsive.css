@@ -1,5 +1,8 @@
 /* Media query for mobile views */
 @media screen and (max-width: 748px) {
+    .data, .weather{
+        position: static;
+    }
     .hero {
         display: flex;
         flex-direction: column;
@@ -18,6 +21,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .weather h2 .emoji {
+        display: none;
     }
 
     .weather h2::after {
