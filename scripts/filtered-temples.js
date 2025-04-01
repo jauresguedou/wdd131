@@ -140,7 +140,7 @@ const temples = [
             <h3 class="temple-name">${temple.templeName}</h3>
             <p class="temple-location">Location: ${temple.location}</p>
             <p class="temple-dedicated">Dedicated: ${temple.dedicated}</p>
-            <p class="temple-area">Area: ${temple.area} sq.ft</p>
+            <p class="temple-area">Size: ${temple.area} sq.ft</p>
           </div>
           <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
         `;
