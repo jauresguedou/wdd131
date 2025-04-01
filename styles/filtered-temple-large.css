@@ -1,0 +1,10 @@
+@media (max-width:768px){
+    .pic{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    } } 
