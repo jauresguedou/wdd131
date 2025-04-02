@@ -5,6 +5,14 @@ body {
     font-family: 'Roboto', sans-serif;
     font-family: 'Smooch Sans', sans-serif;
 }
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('Montserrat.woff2') format('woff2');
+}
+
 
 /* Header Styles */
 header {
@@ -165,4 +173,14 @@ footer {
     height: auto;
     display: block;
   }
+  .temple-cards {
+    min-height: 500px; /* Adjust based on expected content */
+}
+.temple-card img {
+    width: 100%;
+    aspect-ratio: 16 / 10; /* Adjusted for your image dimensions */
+    object-fit: cover;
+  }
+  
+ 
   
