@@ -2,7 +2,7 @@
     main {
         height: auto; /* Allow flexible height */
         padding: 10px;
-        width: 100%;
+        width: auto;
     }
 
     /* Make form elements full-width */
@@ -64,7 +64,7 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        width: 100%;
+        width: auto;
     }
     
 }
