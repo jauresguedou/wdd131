@@ -6,14 +6,14 @@
       box-sizing: border-box;
       height: auto;
     }
-  
+    
     /* Form should be fluid */
     form {
       width: 100%;
       box-sizing: border-box;
     }
-  
-    /* Override desktop fixed widths for these sections */
+    
+    /* Override desktop fixed widths/heights for these sections and add separation */
     .product,
     .stars,
     .date,
@@ -21,11 +21,12 @@
     .written-review,
     .username {
       width: 100% !important; /* Override any fixed width (like 1150px) */
-      margin: 0 auto;
-      padding: 0 10px;
+      margin: 0 auto 20px;    /* Center and add 20px bottom margin for spacing */
+      padding: 0 10px;        /* Side padding */
       box-sizing: border-box;
+      height: auto !important;/* Override any fixed height */
     }
-  
+    
     /* Make select, date input, and text input fill their container */
     .product select,
     .time input[type="date"],
@@ -33,34 +34,36 @@
       width: 100% !important; /* Ensure these fields use full available width */
       box-sizing: border-box;
     }
-  
-    /* Ensure the textarea fits within the container */
+    
+    /* Ensure the textarea fits within its container */
     .written-review textarea {
       width: 100% !important;
       max-width: 100%;
       box-sizing: border-box;
-      resize: vertical; /* Allow vertical resizing */
+      resize: vertical; /* Allow vertical resizing only */
     }
-  
+    
     /* Adjust the layout of checkboxes */
     .customize {
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
+      gap: 10px;          /* Adds spacing between checkboxes */
+      margin-bottom: 20px; /* Added margin to separate from following elements */
     }
-  
+    
     input[type="checkbox"] {
-      transform: scale(1.5);
+      transform: scale(1.5); /* Larger checkboxes for touch accessibility */
     }
-  
+    
     /* Center and space out the rating stars */
     .rating {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       gap: 10px;
+      margin-bottom: 20px; /* Ensure separation from the date section */
     }
-  
+    
     /* Make the submit button touch-friendly */
     .submission input[type="submit"] {
       width: 100%;
@@ -68,7 +71,7 @@
       font-size: 18px;
       box-sizing: border-box;
     }
-  
+    
     /* Adjust the footer to fit the screen width */
     footer {
       width: 100%;
