@@ -22,7 +22,7 @@
        
         <form id="reviewForm" method="get" action="review.html">
               <div class="product"> 
-                <label for="item">Product name</label>
+                <label for="item">Product name <span id="requied">*</span></label>
                 <select name="products" id="item" required >
                         <option value="" disabled selected>Select a Product ...</option>
                 </select>   
@@ -30,7 +30,7 @@
 
 
            <div class="stars">
-            <label>Overall Rating</label>
+            <label>Overall Rating<span id="requied">*</span></label>
             <div class="rating">
               <label for="fivestar"><input type="radio" id="fivestar" name="stars" value="5" required>&star;</label>
               <label for="fourstar"><input type="radio" id="fourstar" name="stars" value="4" required>&star;&star;</label>
@@ -41,7 +41,7 @@
            </div>
 
            <div class="date">
-             <label>Date of Installation</label>
+             <label>Date of Installation<span id="requied">*</span></label>
                <div class="time">
                  <label><input type="date" name="date" id="when" required></label>
               </div>
