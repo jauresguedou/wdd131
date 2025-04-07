@@ -22,28 +22,29 @@
        
         <form id="reviewForm" method="get" action="review.html">
               <div class="product"> 
-                <label>Product name</label>
+                <label for="item">Product name</label>
                 <select name="products" id="item" required >
-                  <option value="" disabled selected>Select a Product ...</option>
-                </select>    
+                        <option value="" disabled selected>Select a Product ...</option>
+                </select>   
               </div>   
 
 
            <div class="stars">
             <label>Overall Rating</label>
             <div class="rating">
-                <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar">&star;</label>
-                <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar">&star;&star;</label>
-                <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar">&star;&star;&star;</label>
-                <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar">&star;&star;&star;&star;</label>
-                <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar">&star;&star;&star;&star;&star;</label>
+              <label for="fivestar"><input type="radio" id="fivestar" name="stars" value="5" required>&star;</label>
+              <label for="fourstar"><input type="radio" id="fourstar" name="stars" value="4" required>&star;&star;</label>
+              <label for="threestar"><input type="radio" id="threestar" name="stars" value="3" required>&star;&star;&star;</label>
+              <label for="twostar"><input type="radio" id="twostar" name="stars" value="2" required>&star;&star;&star;&star;</label>
+              <label for="onestar"><input type="radio" id="onestar" name="stars" value="1" required>&star;&star;&star;&star;&star;</label>
             </div>
            </div>
 
            <div class="date">
              <label>Date of Installation</label>
-                <input type="date" name="date" id="when" required>
-             
+               <div class="time">
+                 <label><input type="date" name="date" id="when" required></label>
+              </div>
           </div>
 
           <div class="features">
@@ -58,15 +59,17 @@
           <div class="written-review">
              <label>Written Review(Optional)</label>
               <div class="write">
-                <textarea name="review" id="written" rows="8" cols="154">
+                <label><textarea name="review" id="written" rows="8" cols="154">
 
-                </textarea>
+                </textarea></label>
               </div>
           </div>
 
           <div class="username">
             <label> Your Name(Optional)</label>
-            <input type="text" name="username" id="about-you">     
+            <div class="identity">
+              <label><input type="text" name="username" id="about-you"></label>
+            </div>    
           </div>
 
           <div class="submission">

@@ -15,6 +15,9 @@ main{
 
 
 
+ .rating label {
+  margin-right: 70px;
+}
 
 
 
@@ -31,6 +34,17 @@ main{
 .product label {
     font-weight: bold; /* Makes the label text stand out */
     margin-bottom: 5px; /* Adds spacing between label and select */
+}
+
+.product select {
+    width: 1150px;
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-top: 10px;
+    height: 20px;
+    
+
+
 }
 
 .stars {
@@ -72,7 +86,12 @@ main{
     height: 60px;
 
 }
-
+.time input[type="date"]{
+    width: 1150px;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 20px;
+}
 .date label {
     font-weight: bold;
     margin-bottom: 5px;
@@ -84,9 +103,9 @@ main{
     width: 1150px;
     margin-left: 20px;
     margin-right: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
     height: 60px;
-    margin-bottom: 70px;
+    margin-bottom: 110px;
 
 }
 
@@ -97,6 +116,18 @@ main{
 .customize{
     display: flex;
     flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.customize label {
+    margin-top: 5px;
+
+}
+ 
+ input[type="checkbox"]{
+    transform: scale(2);
+    margin-right: 9px;
+    
 }
 
 .written-review {
@@ -105,7 +136,7 @@ main{
     width: 1150px;
     margin-left: 20px;
     margin-right: 20px;
-    margin-top: 20px;
+    margin-top: 50px;
     
 }
 
@@ -122,6 +153,14 @@ main{
     height: 60px;
 }
 
+.identity input[type="text"]{
+    width: 1150px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    height: 20px;
+}
+
 .username label {
     font-weight: bold;
 }
@@ -132,8 +171,8 @@ main{
     margin-right: 20px;
     margin-top: 20px;
     cursor: pointer;
-    color: rgba(0, 100, 0, 0.614);
-    background-color: aliceblue;
+    color: white;
+    background-color: darkgreen;
     font-weight: bold;
 }
 
