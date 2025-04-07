@@ -1,4 +1,4 @@
-@media screen  and (max-width:768px){
+@media(max-width:768px){
     main {
         height: auto; /* Allow flexible height */
         padding: 10px;
