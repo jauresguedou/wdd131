@@ -66,11 +66,14 @@
     
     /* Make the submit button touch-friendly */
     .submission input[type="submit"] {
-      width: 100%;
-      padding: 15px;
-      font-size: 18px;
-      box-sizing: border-box;
-    }
+        display: block;           /* Make it a block-level element */
+        max-width: 300px;         /* Set a desired maximum width */
+        width: 100%;              /* Allow it to take up full width up to the max */
+        margin: 20px auto;        /* Auto left/right margins center it horizontally */
+        padding: 15px;
+        font-size: 18px;
+        box-sizing: border-box;
+      }
     
     /* Adjust the footer to fit the screen width */
     footer {
