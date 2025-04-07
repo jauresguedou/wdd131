@@ -1,16 +1,19 @@
-@media(max-width:768px){
+@media (max-width: 768px) {
+    /* Ensure the main container uses full width and accounts for padding */
     main {
-        height: auto; /* Allow flexible height */
+        height: auto; /* Flexible height */
         padding: 10px;
-        width: auto;
+        width: 100%;
+        box-sizing: border-box;
     }
 
-    /* Make form elements full-width */
+    /* Make form elements full-width and centered */
     form {
         width: 100%;
+        box-sizing: border-box;
     }
 
-    /* Stack elements vertically */
+    /* Stack sections vertically and ensure full width */
     .product,
     .stars,
     .date,
@@ -18,33 +21,43 @@
     .written-review,
     .username {
         width: 100%;
-        margin-left: 0;
-        margin-right: 0;
+        margin: 0;  /* Remove left/right margins */
         text-align: left;
+        padding: 0 10px;  /* Add some side padding */
+        box-sizing: border-box;
     }
 
-    /* Make select box full-width */
+    /* Full-width select and input fields */
     .product select,
     .time input[type="date"],
     .identity input[type="text"] {
         width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Ensure the textarea fits the screen */
+    .written-review textarea {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        resize: vertical; /* Allow vertical resizing only */
     }
 
     /* Adjust checkbox layout */
     .customize {
         display: flex;
         flex-wrap: wrap;
-        gap: 10px; /* Adds spacing */
+        gap: 10px; /* Adds spacing between checkboxes */
     }
 
     input[type="checkbox"] {
-        transform: scale(1.5); /* Adjust size for touch accessibility */
+        transform: scale(1.5); /* Larger checkboxes for touch accessibility */
     }
 
-    /* Adjust rating display for better spacing */
+    /* Center and space the rating stars */
     .rating {
         display: flex;
-        justify-content: center; /* Centers stars */
+        justify-content: center;
         flex-wrap: wrap;
         gap: 10px;
     }
@@ -54,17 +67,18 @@
         width: 100%;
         padding: 15px;
         font-size: 18px;
+        box-sizing: border-box;
     }
 
-    /* Footer adjustments */
+    /* Footer adjustments to ensure it fits the screen */
     footer {
         height: auto;
+        width: 100%;
         padding: 15px;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        width: auto;
+        box-sizing: border-box;
     }
-    
 }
