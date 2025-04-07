@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+
+    </header>
+    <main>
+       
+        <form id="reviewForm" method="get" action="review.html">
+              <div class="product"> 
+                <label for="productName">Product name</label>
+                <select name="products" id="item"required >
+                  <option value="" disabled selected>Select a Product ...</option>
+                </select>    
+              </div>   
+
+
+           <div class="stars">
+            <label>Overall Rating</label>
+            <div class="rating">
+                <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar">&star;</label>
+                <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar">&star;&star;</label>
+                <input type="radio" id="threestar"name="stars" value="3" required><label for="threestar">&star;&star;&star;</label>
+                <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar">&star;&star;&star;&star;</label>
+                <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar">&star;&star;&star;&star;&star;</label>
+            </div>
+           </div>
+
+           <div class="date">
+             <label for="dateInstalled">Date of Installation</label>
+                <input type="date" name="date" id="when" required>
+             
+          </div>
+
+          <div class="features">
+            <label>Which features did you find useful in the product?<br>(Check all that apply)</label>
+            <div class="customize">
+              <label><input type="checkbox" name="feature" value="Durability" id="durability">Durability</label>
+              <label><input type="checkbox" name="feature" value="Ease of Use" id="ease-of-use">Ease of Use</label>
+              <label><input type="checkbox" name="feature" value="Performance" id="perform">Performance</label>
+              <label><input type="checkbox" name="feature" value="Design" id="design">Design</label>  
+            </div> 
+          </div>
+          <div class="written-review">
+             <label for="review">Written Review(Optional)</label>
+              <div class="write">
+                <textarea name="review" id="written" rows="8" cols="154">
+
+                </textarea>
+              </div>
+          </div>
+
+          <div class="username">
+            <label> Your Name(Optional)</label>
+            <input type="text" name="username" id="about-you">     
+          </div>
+
+          <div class="submission">
+
+            <label><input type="submit" value="Post Review"></label>
+          </div>
+          
+    
+        </form>
+
+    </main>
+    <footer>
+        <div class="beauty">
+            <p>
+                ©️<span id="currentyear"></span>💬Jaures Guedou💬Benin
+            </p>
+        </div>
+        <div class="date">
+            <p id="lastModified"></p>
+        </div>
+        
+    </footer>
+    
+</body>
+</html>

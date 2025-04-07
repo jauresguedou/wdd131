@@ -1,0 +1,161 @@
+
+
+header{
+    background-color: rgba(0, 0, 255, 0.386);
+    text-align: center;
+}
+
+main{
+    background-color: rgba(169, 169, 169, 0.558);
+    height: 120vh;
+   
+    
+}
+
+
+
+form {
+    width: 100%;
+    height: 50px;
+}
+
+form .box{
+    width: 100%;
+    height: 50 px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+
+
+.product {
+    display: flex;
+    flex-direction: column;
+    width: 1150px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    height: 60px;
+}
+
+.product label {
+    font-weight: bold; /* Makes the label text stand out */
+    margin-bottom: 5px; /* Adds spacing between label and select */
+}
+
+.stars {
+    display: flex;
+    flex-direction: column;
+    width: 1150px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    height: 60px;
+}
+
+
+.stars label {
+    font-weight: bold ;
+    margin-bottom: 5px;
+}
+
+.rating {
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+.rating input[type="radio"]{
+    cursor: pointer;
+}
+
+
+
+.date {
+    display: flex;
+    flex-direction: column;
+    width: 1150px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    height: 60px;
+
+}
+
+.date label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.features{
+    display: flex;
+    flex-direction: column;
+    width: 1150px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    height: 60px;
+    margin-bottom: 70px;
+
+}
+
+.features label {
+    font-weight: bold;
+}
+
+.customize{
+    display: flex;
+    flex-direction: column;
+}
+
+.written-review {
+    display: flex;
+    flex-direction: column;
+    width: 1150px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    
+}
+
+.written-review label {
+    font-weight: bold;
+}
+.username {
+    display:flex;
+    flex-direction: column;
+    width: 1150px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    height: 60px;
+}
+
+.username label {
+    font-weight: bold;
+}
+.submission input[type="submit"] {
+    width:100%;
+    max-width: 1150px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    color: rgba(0, 100, 0, 0.614);
+    background-color: aliceblue;
+    font-weight: bold;
+}
+
+
+
+.submission input[type="submit"]:hover {
+    background-color: darkgreen;
+    color: aliceblue;
+}
+footer{
+
+    background-color:  rgba(0, 0, 255, 0.386);
+    text-align: center;
+    height: 20vh;
+}
