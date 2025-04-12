@@ -1,0 +1,27 @@
+header{
+    text-align: center;
+    background-color: cadetblue;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+main{
+    background-color: lightgray;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+label button{
+    background-color:teal;
+    font-weight: bold;
+    font-size:x-large ;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    justify-self: start;
+    margin-left: 54px;
+    cursor: pointer;
+}

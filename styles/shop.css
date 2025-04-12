@@ -1,0 +1,87 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+main{
+    background-color: rgba(128, 128, 128, 0.62);
+}
+
+/* Header */
+header {
+    background-color:rgba(0, 0, 255, 0.543);
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+}
+
+/* Main Content */
+.first-cloth {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Product Items */
+figure {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 200px;
+    transition: transform 0.3s ease-in-out;
+}
+
+figure:hover {
+    transform: scale(1.05);
+}
+
+/* Images */
+figure img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Item Name */
+figcaption {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+/* Price */
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #444;
+}
+
+/* Buy Button */
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}

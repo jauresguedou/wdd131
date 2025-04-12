@@ -1,0 +1,128 @@
+header{
+    text-align: center;
+    background-color: cadetblue;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+main{
+    background-color: lightgray;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-name {
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 30px;
+    
+
+}
+
+.first-name input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.last-name {
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.last-name input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.username {
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.username input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.password {
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.password input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.confirm-password {
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.confirm-password input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.email {
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.email input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: cadetblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: large;
+    font-weight: bold;
+    
+    margin-left: 110px;
+    
+}
+.submit-button button[type="submit"]:hover {
+    background-color: darkcyan;
+    transform: scale(1.05);
+}
+.submit-button button[type="submit"]:active {
+    background-color: darkslategray;
+    transform: translateY(2px);
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}

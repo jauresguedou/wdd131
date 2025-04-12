@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Outfits to purchase to look good">
+    <meta name="author" content="Jaures-Guedou">
+    <title>Purchase Best Drip</title>
+    <link rel="stylesheet" href="styles/drip-large.css">
+    <link rel="stylesheet" href="styles/drip.css">
+    <script src="scripts/drip.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto&family=Roboto+Condensed:wght@100..900&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/drip.webp" alt="Drip Logo" loading="lazy">
+        </div>
+
+        <nav>
+            <a href="drip.html" class="hidden-link" aria-hidden="true">Home</a>
+            <a href="shop.html" class="hidden-link" aria-hidden="true">Shop</a>
+            <a href="#" class="hidden-link" aria-hidden="true">About</a>
+            <a href="#" class="hidden-link" aria-hidden="true">Contacts</a>          
+        </nav>
+        <div class="search-bar">
+                <form action="search" method="get" class="search-bar">
+                    <input type="text" name="cloth" placeholder="Search for your outfit ...">
+                    <button type="submit">
+                        <img src="images/search-outline.webp" alt="Click to search">
+                    </button>
+                </form>
+        </div>
+
+        <div class="cart">
+            <img src="images/cart-outline.webp" alt="Drip Logo" >
+        </div>
+        <div class="hamburger-menu">
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="menu-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+            <nav class="mobile-nav">
+              <a href="drip.html">Home</a>
+              <a href="shop.html">Shop</a>
+              <a href="#">About</a>
+              <a href="#">Contact</a>
+            </nav>
+          </div>
+          
+
+    </header>
+    <main>
+         <section class="banner">
+            <div class="clean">
+             <img src="images/banner.webp" alt="full width banner"loading="lazy">
+             <div class="lean">
+                <p>Purchase Your Outfits</p>
+                <form action="shop.html" method="get" class="shop-item">
+                    <input type="hidden" name="redirect" value="true">
+                    <button type="submit">
+                        Shop Now
+                    </button>
+                </form>
+             </div>
+             <div class="product-card">
+                <img src="images/product.webp" alt="T-Shirt" loading="lazy">
+                <img src="images/product2.webp" alt="White pants"loading="lazy">
+                <img src="images/product3.webp" alt="Red combination"loading="lazy">
+             </div>
+            </div>
+            <div class="category">
+                <nav class="category-nav">
+                    <ul>
+                        <li>
+                            <a href="#" class="category-link" data-category="Men'sCloting">Men'sClothing</a>
+                            <div class="folder" id="Men'sCloting"></div>
+                        </li>
+                        <li>
+                            <a href="#" class="category-link" data-category="Women'sClothing">Women'sClothing</a>
+                            <div class="folder" id="Women'sClothing"></div>
+                        </li>
+                        <li>
+                            <a href="#" class="category-link" data-category="Accessories">Accessories</a>
+                            <div class="folder" id="Accessories"></div>
+                        </li>
+                        <li>
+                            <a href="#" class="category-link" data-category="SpecialOffers">Special Offers</a>
+                            <div class="folder" id="SpecialOffers"></div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            
+         </section>
+         <section class="newsletter">
+            <p>Sign up for special deals</p>
+            <form action="subscribe.html" method="get" id="subscribeForm">
+               
+                <button type="submit">
+                    Sign up
+                </button>
+
+              
+           </form>
+
+         </section>
+
+    </main>
+    <footer>
+        <div class="describe">
+          <div class="about">
+            <h2>About Us</h2>
+            <p>Best Drip Ever is a company that aim to provide individuals <br>with trendy outfits and to help them improve their style</p>
+            <p>Created by two young guys who liked to dress well, this company is <br> built to innovate the Fashion world.They wanted to show young men <br>and  women that they don't need much money to be well clothed with <br>quality clothes. Whether it be casual wear, formal or accessories, everthing <br> is at their disposal   </p>
+          </div>
+          <div class="contact">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="elevencpruniverse@gmail.com">elevencpruniverse@gmail.com</a> </p>
+            <p>Phone: +22997422710</p>
+          </div>
+          <div class="follow">
+            <h2>Follow Us</h2>
+             <div class="contact-icon">
+             <img src="images/logo-facebook.webp" alt="Contact us via facebook"loading="lazy">
+             <img src="images/logo-instagram.webp" alt="Contact us via instagram"loading="lazy">
+             </div>
+          </div>
+        </div>
+
+    </footer>
+    
+</body>
+</html>

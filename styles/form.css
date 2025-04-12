@@ -1,22 +1,20 @@
-
-
-header{
+header {
     background-color: rgba(0, 0, 255, 0.386);
     text-align: center;
 }
 
-main{
+main {
     background-color: rgba(169, 169, 169, 0.558);
     height: 120vh;
-   
-    
+
+
 }
 
 
 
 
- .rating label {
-  margin-right: 70px;
+.rating label {
+    margin-right: 70px;
 }
 
 
@@ -32,8 +30,10 @@ main{
 }
 
 .product label {
-    font-weight: bold; /* Makes the label text stand out */
-    margin-bottom: 5px; /* Adds spacing between label and select */
+    font-weight: bold;
+    /* Makes the label text stand out */
+    margin-bottom: 5px;
+    /* Adds spacing between label and select */
 }
 
 .product select {
@@ -42,7 +42,7 @@ main{
     margin-right: 10px;
     margin-top: 10px;
     height: 20px;
-    
+
 
 
 }
@@ -59,7 +59,7 @@ main{
 
 
 .stars label {
-    font-weight: bold ;
+    font-weight: bold;
     margin-bottom: 5px;
 }
 
@@ -67,10 +67,10 @@ main{
     justify-content: space-between;
     margin-left: 20px;
     margin-right: 20px;
-    
+
 }
 
-.rating input[type="radio"]{
+.rating input[type="radio"] {
     cursor: pointer;
 }
 
@@ -86,18 +86,20 @@ main{
     height: 60px;
 
 }
-.time input[type="date"]{
+
+.time input[type="date"] {
     width: 1150px;
     margin-left: 5px;
     margin-right: 5px;
     height: 20px;
 }
+
 .date label {
     font-weight: bold;
     margin-bottom: 5px;
 }
 
-.features{
+.features {
     display: flex;
     flex-direction: column;
     width: 1150px;
@@ -113,7 +115,7 @@ main{
     font-weight: bold;
 }
 
-.customize{
+.customize {
     display: flex;
     flex-direction: column;
     margin-bottom: 50px;
@@ -123,11 +125,11 @@ main{
     margin-top: 5px;
 
 }
- 
- input[type="checkbox"]{
+
+input[type="checkbox"] {
     transform: scale(2);
     margin-right: 9px;
-    
+
 }
 
 .written-review {
@@ -137,14 +139,15 @@ main{
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 50px;
-    
+
 }
 
 .written-review label {
     font-weight: bold;
 }
+
 .username {
-    display:flex;
+    display: flex;
     flex-direction: column;
     width: 1150px;
     margin-left: 20px;
@@ -153,7 +156,7 @@ main{
     height: 60px;
 }
 
-.identity input[type="text"]{
+.identity input[type="text"] {
     width: 1150px;
     margin-left: 5px;
     margin-right: 5px;
@@ -164,8 +167,9 @@ main{
 .username label {
     font-weight: bold;
 }
+
 .submission input[type="submit"] {
-    width:100%;
+    width: 100%;
     max-width: 1150px;
     margin-left: 20px;
     margin-right: 20px;
@@ -182,11 +186,10 @@ main{
     background-color: darkgreen;
     color: aliceblue;
 }
-footer{
 
-    background-color:  rgba(0, 0, 255, 0.386);
+footer {
+
+    background-color: rgba(0, 0, 255, 0.386);
     text-align: center;
     height: 20vh;
 }
-
- 

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suscribe for more</title>
+    <meta name="description" content="Subscribe to our newsletter for more updates on our products.">
+    <meta name="author" content="Jaures Guedou">
+    <link rel="stylesheet" href="styles/subscribe.css">
+    <link rel="stylesheet" href="styles/subscribe-large.css">
+    <script src="scripts/subscribe.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto&family=Roboto+Condensed:wght@100..900&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        Subscription Form
+    </header>
+    <main>
+        <form action="thank-you.html" method="get" id="thank-you">
+            
+            <div class="first-name">
+                <label for="fname"> First name<span id="requied">*</span></label>
+                <input type="text" name="fname" id="fname" required placeholder="Enter your first name">
+            </div>
+            <div class="last-name">
+                <label for="lname"> Last name<span id="requied">*</span></label>
+                <input type="text" name="lname" id="lname" required placeholder="Enter your last name">
+            </div>
+            
+            <div class="username">
+                <label for="username">Username<span id="requied">*</span></label>
+                <input type="text" name="username" id="username" required placeholder="Define a username">
+            </div>
+            <div class="password">
+                <label for="password">Password<span id="requied">*</span></label>
+                <input type="password" name="password" id="password" required placeholder="Define a  password">
+            </div>
+            <div class="confirm-password">
+                <label for="confirm-password">Confirm Password<span id="requied">*</span></label>
+                <input type="password" name="confirm-password" id="confirm-password" required placeholder="Confirm your password">
+            </div>
+            <div class="email">
+                <label for="email">Email Address<span id="requied">*</span></label>
+                <input type="email" name="email" id="email" required placeholder="Enter your email address">
+            </div>
+                <button type="submit" id="submit-button">Sign up</button>
+            <div class="privacy-policy">
+                <p>By subscribing, you agree to our <a href="#">Privacy Policy</a>.</p>
+            </div>
+        </form>
+    </main>
+
+    
+</body>
+</html>

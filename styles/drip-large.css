@@ -1,0 +1,236 @@
+@media (max-width: 768px) {
+  /* Hide elements we don't need on mobile */
+  .search-bar,
+  .cart {
+    display: none;
+  }
+  .banner {
+    position: relative;
+    width: 200%;  
+    
+  }
+  
+
+  .lean p {
+    display: none;
+  }
+  
+  .category a[data-category="SpecialOffers"],
+  .category #SpecialOffers {
+    display: none;
+  }
+
+  .category a[data-category="Accessories"],
+  .category #Accessories {
+    display: none;
+  }
+  
+  
+  
+  /* Adjust logo size for mobile */
+  .logo {
+    display: flex;
+  }
+  
+  .logo img {
+   margin-left: 555px;
+    width: 70px;
+    height: auto;
+  }
+  header> nav >a {
+    display: none;
+  }
+  
+  .lean {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .lean button[type="submit"] {
+    margin:0 auto
+  }
+  
+  
+  
+  
+ 
+  
+  /* Remove absolute positioning from product-card and arrange images horizontally */
+  .product-card {
+    display: flex;
+    flex-direction: column;  /* This arranges the images vertically */
+    width: 100%;
+    margin: 9px;
+    margin-top: -60px;
+    justify-content: center;      /* Center the container horizontally */
+    
+  }
+
+  .product-card img {
+    flex-direction: column;
+    
+  }
+  .product-card img:last-child {
+    display: none;
+  }
+  
+ 
+  
+  /* Ensure the banner is a full-width positioning context */
+  .banner {
+    position: relative;
+    width: 100%;              /* Full-width banner */
+    margin: 0 auto;
+  }
+  
+  /* For the category section:
+     - Position .category absolutely at the bottom of .banner
+     - Explicitly center it horizontally */
+  .category {
+    margin-top: 240px; 
+    bottom: 90px;
+    left: 40%;
+    transform: translateX(-50%);
+    width: 80%;           /* Center horizontally */
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .category-nav ul {
+    justify-content: space-around;
+    padding: 0;
+    margin-bottom: 600px ;
+  }
+  
+  .category-nav li {
+    text-align: center;
+    flex: 1;
+  }
+  
+  /* Adjust the newsletter section and button */
+  .newsletter{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+  
+  }
+  .newsletter p {
+    margin-top: 270px;
+    margin-bottom: -189px;
+  }
+  
+  .newsletter button[type="submit"] {
+    
+    margin-bottom: 20px;
+    margin-top: 200px;
+    width: 50%;
+    font-size: 1rem;
+    padding: 10px;
+    margin-left: 60px;
+  }
+  
+  /* --- Footer Adjustments: Stack elements vertically --- */
+  footer .describe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+  }
+
+  footer .about,
+  footer .contact,
+  footer .follow {
+    position: static;
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+    padding: 0 10px;
+  }
+/* Show and style the hamburger menu in the top left */
+.hamburger-menu {
+  display: block !important; /* Override global display: none */
+  position: fixed;           /* Fixed positioning keeps it in the same spot */
+  top: 0;
+  left: 0;
+  z-index: 10000;            /* Stronger z-index to ensure visibility */
+}
+
+/* Hide the checkbox itself */
+.hamburger-menu input[type="checkbox"] {
+  display: none;
+}
+
+/* Style the hamburger icon (three horizontal lines) */
+.hamburger-menu .menu-icon {
+  display: block;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.8); /* Optional background for visibility */
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.hamburger-menu {
+  display: block !important; /* Override global display: none */
+  position: fixed;           
+  top: 10px;
+  left: 10px;
+  z-index: 10000;
+}
+
+/* Hide the checkbox itself */
+.hamburger-menu input[type="checkbox"] {
+  display: none;
+}
+
+/* Style the hamburger icon (three horizontal lines) */
+.hamburger-menu .menu-icon {
+  display: block;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.hamburger-menu .menu-icon span {
+  display: block;
+  height: 3px;
+  background-color: #000;
+  margin: 4px 0;
+}
+
+/* Adjusted Mobile Navigation - Shorter Display */
+.hamburger-menu .mobile-nav {
+  display: none;
+  position: absolute; /* Prevent layout shifts */
+  top: 40px;
+  left: 0;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 5px 10px;
+  border-radius: 5px;
+  width: 150px; /* Limit width */
+  height: auto; /* Ensure it does not expand full height */
+  max-height: 150px; /* Prevent excessive height */
+  overflow: hidden; /* Hide any extra content */
+}
+
+/* When the checkbox is checked, show the mobile nav menu */
+#menu-toggle:checked ~ .mobile-nav {
+  display: block;
+}
+
+/* Style the mobile nav links */
+.hamburger-menu .mobile-nav a {
+  display: block;
+  font-size: 1rem;
+  color: #000;
+  text-decoration: none;
+  margin: 3px 0; /* Reduce spacing */
+  padding: 5px; /* Adjust for readability */
+}
+
+}
